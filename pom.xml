@@ -13,11 +13,26 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <!-- ici des propriétés réutilisables du projet -->
+        <jupiter.version>5.12.2</jupiter.version>
     </properties>
 
     <dependencies>
-        <!-- les depéndances du projet -->
+        <!-- API d'écriture des tests -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- moteur d'exécution -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
 
 
 </project>
